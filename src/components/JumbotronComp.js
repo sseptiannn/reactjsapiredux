@@ -1,8 +1,8 @@
 import React from "react";
-import { Jumbotron, Button, Container } from "reactstrap";
+import { Jumbotron, Button, Container } from 'reactstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'  //npm install react fontawesome
-import { faInfo, faSave } from '@fortawesome/free-solid-svg-icons'
+import { faInfo } from '@fortawesome/free-solid-svg-icons'
 
 const JumbotronComp = (props) => {
   return (
@@ -21,8 +21,6 @@ const JumbotronComp = (props) => {
           </p>
           <p className="lead">
             <Button color="dark"> <FontAwesomeIcon icon={faInfo} /> Learn More</Button>
-            <br></br>
-            <Button color="dark"> <FontAwesomeIcon icon={faSave} /> Learn More</Button>
           </p>
         </Container>
       </Jumbotron>
