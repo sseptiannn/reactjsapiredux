@@ -1,6 +1,9 @@
 import React from "react";
 import { Jumbotron, Button, Container } from "reactstrap";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'  //npm install react fontawesome
+import { faInfo, faSave } from '@fortawesome/free-solid-svg-icons'
+
 const JumbotronComp = (props) => {
   return (
     <div>
@@ -17,7 +20,9 @@ const JumbotronComp = (props) => {
             out within the larger container.
           </p>
           <p className="lead">
-            <Button color="dark">Learn More</Button>
+            <Button color="dark"> <FontAwesomeIcon icon={faInfo} /> Learn More</Button>
+            <br></br>
+            <Button color="dark"> <FontAwesomeIcon icon={faSave} /> Learn More</Button>
           </p>
         </Container>
       </Jumbotron>
